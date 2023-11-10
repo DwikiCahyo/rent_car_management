@@ -74,10 +74,8 @@ exports.postCar = async (req, res) => {
 
     const car = await carsModel.query().insert(body).returning("*");
     res.status(200).json({
-      status: "Success",
-      message: "Car was added successfully!",
-      carId: car.id,
-      statusCode: 201,
+      message: "Success add new car",
+      data: car,
     });
   } catch (e) {
     res.status(400).json({ err: e });
