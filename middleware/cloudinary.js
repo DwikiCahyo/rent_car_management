@@ -1,9 +1,11 @@
 const { v2 } = require("cloudinary");
+const path = require("path");
+require("dotenv").config(path.join(__dirname, "..", ".env"));
 
 v2.config({
-  cloud_name: "dekrhuwfp",
-  api_key: "485661813179781",
-  api_secret: "tx0Lo86Oo1KfcFfYMBAgdYFyaW8",
+  cloud_name: process.env.CLOUD_NAME,
+  api_key: process.env.API_KEY,
+  api_secret: process.env.API_SECRET,
   secure: true,
 });
 
