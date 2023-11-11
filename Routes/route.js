@@ -1,10 +1,11 @@
 const express = require("express");
 const router = express.Router();
 const service = require("../Service/service");
+const controller = require("../controller/controller");
 const upload = require("../middleware/multer");
 
-router.get("/", service.landingPage);
-router.get("/search", service.searchPage);
+router.get("/", controller.landingPage);
+router.get("/search", controller.searchPage);
 router.get("/cars", service.getCars);
 router.post("/cars", upload.single("image"), service.postCar);
 router.get("/cars/:id", service.getById);
