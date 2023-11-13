@@ -4,7 +4,9 @@ Rent car management API documentation
 
 ## Car Database Schema
 
-<img src="/views/images/database_schema.png" width="300" height ="500"/>
+<img src="https://github.com/DwikiCahyo/rent_car_management/assets/70952085/89b7a465-91de-4073-9f7e-6e56f7ea2910" width="300" height ="400"/>
+
+
 
 ## API Reference
 
