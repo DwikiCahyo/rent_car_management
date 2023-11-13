@@ -2,6 +2,10 @@
 
 Rent car management API documentation
 
+## Car Database Schema
+
+<img src="/views/images/database_schema.png" width="300" height ="500"/>
+
 ## API Reference
 
 #### Get all cars
@@ -45,7 +49,7 @@ Rent car management API documentation
 | `capacity`     | `string`   | car capacity (4) (sedan) **Required**                       |
 | `rentPerDay`   | `integer`  | car rental cost per day (100000) **Required**               |
 | `availableAt`  | `datetime` | car availablty date (2023-11-09T10:49:14.388Z) **Required** |
-| `available`    | `boolean`  | car availablty (true of false) **Required**                 |
+| `available`    | `boolean`  | car availablty (true or false) **Required**                 |
 | `year`         | `integer`  | car production year (2023) **Required**                     |
 | `options`      | `jsonb`    | car options ([bla, bla, bla]) **Required**                  |
 | `specs`        | `jsonb`    | car specifications ([bla, bla, bla]) **Required**           |

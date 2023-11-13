@@ -103,7 +103,11 @@ exports.editCarById = async (req, res) => {
     };
 
     if (!carId) return res.status(404).json({ message: "car not found" });
-    const car = await carsModel.query().findById(carId).patch(body);
+    const car = await carsModel
+      .query()
+      .findById(carId)
+      .patch(body)
+      .returning("*");
     res.status(200).json({ message: "Success update data", data: car });
   } catch (error) {
     res.status(400).json({ err: error });
