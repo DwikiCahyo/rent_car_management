@@ -13,7 +13,7 @@ const port = process.env.PORT || 3002;
 
 app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use("/", router);
+app.use("/v1/", router);
 
 if (process.env.NODE_ENV === "development") {
   Model.knex(knex(config.development));
