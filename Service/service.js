@@ -60,7 +60,8 @@ exports.postCar = async (req, res) => {
     // upload image
     const result = await v2.uploader.upload(file, {
       folder: "rent_car",
-      public_id: "car_image",
+      use_filename: true,
+      unique_filename: false,
     });
 
     const imageUrl = result.secure_url;
