@@ -4,8 +4,8 @@ const service = require("../Service/service");
 const controller = require("../controller/controller");
 const upload = require("../middleware/multer");
 
-router.get("/", controller.landingPage);
-router.get("/search", controller.searchPage);
+// router.get("/", controller.landingPage);
+// router.get("/search", controller.searchPage);
 router.get("/cars", service.getCars);
 router.post("/cars", upload.single("image"), service.postCar);
 router.get("/cars/:id", service.getById);
