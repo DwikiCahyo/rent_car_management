@@ -18,6 +18,6 @@ Model.knex(knex(config.development));
 
 app.use("/", router);
 
-app.listen(port, () => {
+app.listen(port, "0.0.0.0", () => {
   console.log("Server is running on http://localhost:3000");
 });
