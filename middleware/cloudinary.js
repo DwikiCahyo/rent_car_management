@@ -2,6 +2,8 @@ const { v2 } = require("cloudinary");
 const path = require("path");
 require("dotenv").config(path.join(__dirname, "..", ".env"));
 
+console.log(process.env.CLOUD_NAME);
+
 v2.config({
   cloud_name: process.env.CLOUD_NAME,
   api_key: process.env.API_KEY,
