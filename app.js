@@ -22,5 +22,5 @@ if (process.env.NODE_ENV === "development") {
 }
 
 app.listen(port, "0.0.0.0", () => {
-  console.log("Server is running on http://localhost:3000");
+  console.log(`Server is running on http://localhost:${port}`);
 });
