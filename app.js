@@ -11,7 +11,8 @@ app.use(express.static("views"));
 app.set("view engine", "ejs");
 const port = process.env.PORT || 3002;
 
-console.log(process.env.NODE_ENV);
+console.log("env :", process.env.NODE_ENV);
+console.log("Database :", process.env.DATABASE_URL);
 
 app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: true }));
